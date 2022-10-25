@@ -1,3 +1,4 @@
+// Hey coder, this was one of my CS assignments.
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
