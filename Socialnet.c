@@ -60,8 +60,7 @@ struct node* retUser(char str[MAX])
 
 //search for user with id=key
 struct node* search(int key, struct node *users)
-{
-    //CODE HERE    
+{   
     node *cur = users;
     
     if(cur == NULL)
