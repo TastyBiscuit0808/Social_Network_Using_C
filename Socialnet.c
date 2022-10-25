@@ -87,11 +87,9 @@ struct node* search(int key, struct node *users)
 
 }
 
-//see document for explanattion
 
 struct node*refineUser(struct node*user, struct node *users)
 {
-    //CODE HERE
     user->left = NULL;
     user->right = NULL;
     while(search(user->id, users)!=NULL) 
@@ -132,7 +130,6 @@ struct node*refineUser(struct node*user, struct node *users)
 //insert user with id
 struct node* insertUser(struct node*root,int id,struct node*user)
 {
-   //CODE HERE
     if(root == NULL)
     {
         root = user;
@@ -155,7 +152,6 @@ struct node* insertUser(struct node*root,int id,struct node*user)
 //prints friends list
 void friends(int id, struct node *users) 
 {
-//    CODE HERE
     node *cur = search(id,users);
     if(cur == NULL)
     {
@@ -175,7 +171,7 @@ void friends(int id, struct node *users)
 //find child node with minimum value (inorder successor) - helper to delete node
 struct node *minValueNode(struct node *node)
 {
-  //CODE HERE
+  
     if(node->right == NULL)
     {
         return NULL;
@@ -191,7 +187,7 @@ struct node *minValueNode(struct node *node)
 //deletes itself from its friend's nodes
 struct node*deleteFriends(int key, struct node*users)
 {
-    //CODE HERE
+    
     node* temp = search(key, users);
     if(temp == NULL) return NULL;
     else
@@ -228,7 +224,7 @@ struct node*deleteFriends(int key, struct node*users)
 // Deleting a node
 struct node *deleteNode(struct node *root, int key) 
 {
-  //CODE HERE
+
     if(root == NULL) 
     {
         return root;
@@ -325,7 +321,7 @@ int main(int argc, char **argv)
                     printf("%d\n",result->id);
                 }
                 break;
-
+                
             case 4:
                 scanf("%d", &id);
                 friends(id, users);
