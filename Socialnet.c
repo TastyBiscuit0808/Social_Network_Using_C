@@ -1,5 +1,4 @@
 // Hey coder, this was one of my CS assignments.
-// Making changes in the VS code
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
