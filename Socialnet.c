@@ -1,4 +1,5 @@
 // Hey coder, this was one of my CS assignments.
+// I study in PES University.
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
