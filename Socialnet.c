@@ -1,5 +1,6 @@
 // Hey coder, this was one of my CS assignments.
-//Adding another file
+
+#include <conio.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
